@@ -3,3 +3,15 @@ Goal: Understand the basics of Convolutional Neural Networks (CNNs)
 Interest Focus: Image classification
 Knowledge Level: Beginner
 Preferred Format: Text
+
+Topic: Butterfly
+Goal: The life cycle of butterfly 
+Interest Focus: Nature
+Knowledge Level: Intermediate
+Preferred Format: video
+
+Topic: Volcano
+Goal: How do they erupt
+Interest Focus: geography 
+Knowledge Level: Intermediate
+Preferred Format: video

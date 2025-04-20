@@ -6,6 +6,7 @@ The **Enhanced Interactive Learning Assistant** is an AI-powered system designed
 ---
 
 ## Features
+- Dashboard with general instructions 
 - Accepts user learning topics and objectives.
 - Gathers information from multiple research sources:
   - Web content (simulated or API-based).
@@ -20,6 +21,9 @@ The **Enhanced Interactive Learning Assistant** is an AI-powered system designed
   - Citations and references.
   - Suggested resources for further learning.
 - Supports follow-up questions to modify and refine the report.
+- the ai assistant integrated to help resolve quick doubts
+-  version  supports real-time content modification based on follow-up questions. 
+- The history of the previous reports is maintained 
 
 ---
 
@@ -32,8 +36,8 @@ The **Enhanced Interactive Learning Assistant** is an AI-powered system designed
 ### Setup
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/Enhanced-Interactive-Learning-Assistant.git
-    cd Enhanced-Interactive-Learning-Assistant
+    git clone https://github.com/Madhvi31/Vahan_ai.git
+    cd Vahan_ai
     ```
 
 2. Create a virtual environment (optional but recommended):
@@ -50,8 +54,13 @@ The **Enhanced Interactive Learning Assistant** is an AI-powered system designed
 
 4. Run the application:
     ```bash
-    streamlit run learning_assistant_app.py
+    streamlit run app.py
     ```
+5. Dockerzation:
+    ``` create the docker file 
+        set up the desktop docker and run the engine 
+        give command in bash : - docker build -t your-image-name .
+        to run the app : docker run -d -p 8000:8000 --name your-container-name your-image-name
 
 ---
 
@@ -61,6 +70,7 @@ The system is built using the following components:
 - **Wikipedia API**: For retrieving web content summaries.
 - **YouTube API (simulated)**: For fetching video transcripts (simulated in the code).
 - **Google Scholar API (simulated)**: For retrieving academic research summaries (simulated in the code).
+- ** Cohere ** : For fetching the data for the ai assistant 
 
 The application allows users to input topics and learning goals, fetches relevant content from simulated sources, and generates a personalized learning report.
 
@@ -104,7 +114,7 @@ Follow-up questions allow users to refine and modify the content based on their 
 - **Video Transcripts**: Currently simulated, but real transcripts can be fetched from platforms like YouTube or Vimeo.
 - **Academic Research**: Currently simulated, but integration with real academic databases (e.g., Google Scholar) can be added.
 - **Visual Aids**: Diagrams and charts are placeholders; real visual aids could be generated using tools like Matplotlib or Plotly.
-- **Real-time Modifications**: Future versions can support real-time content modification based on follow-up questions.
+
 
 ---
 
@@ -128,13 +138,13 @@ A generated report that includes:
 
 ## Demo
 
-You can try the application yourself by running it locally as described in the installation instructions. You can see the sample_input.txt file and screenshorts file to understand more.
+You can try the application yourself by running it locally as described in the installation instructions. You can see the sample_input.txt file and screenshorts  along with the demo video file to understand more.
 
 ---
 
 ## Technology Stack
 - **Frontend**: Streamlit
-- **APIs**: Wikipedia API, simulated YouTube and Google Scholar APIs
+- **APIs**: Wikipedia API, simulated YouTube and Google Scholar APIs , Cohere 
 - **Programming Language**: Python 3.x
 
 ---
